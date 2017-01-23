@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include "Student" 
+#include "Student.h" 
 using namespace std;
 
 int main() {
@@ -10,6 +10,7 @@ int main() {
 	Student student;
 	
 	cout << "Please enter a student grade: ";
+	cin >> grade;
 	student.setGrade(grade);
 	cout << student.getGrade(); 
 

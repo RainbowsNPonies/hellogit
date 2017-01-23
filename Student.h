@@ -1,3 +1,5 @@
+#ifndef STUDENT_H
+#define STUDENT_H
 #include <iostream>
 
 #include <iomanip>
@@ -26,3 +28,5 @@ class Student {
     }
 
 };
+
+#endif
