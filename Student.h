@@ -8,25 +8,15 @@
 
 class Student {
 
-    int passed = 0, failed = 0;
-
-    char grade = ' ', choice = 'N';
-
-
+    private:
+    char grade = ' ';
+	
 
     public:
 
-
-    void setGrade(char g){
-
-      	grade = g;
-
-    }
-
-    char getGrade() {
-	return grade;
-    }
-
+    void setGrade(char g);
+    char getGrade();
+	    
 };
 
 #endif
