@@ -4,9 +4,18 @@
 using namespace std;
 #include "Student.h"
 
+int linearSearch(auto data, auto key) {
+	for(int i =0;i< data.size();i++){
+		if(data[i]==key){
+			return i;
+		}
+	}
+	return -1;
+}
+
 int main() {
 	
-    int i;
+    int i. result;
 	
     Student grade1;
     Student grade2;
@@ -31,6 +40,23 @@ int main() {
         cout << Grades[i].getGrade() <<endl;
     }
 
+
+    cout<<"To exit please enter 'N' followed by enter key"<<endl;
+    cout<< "Please enter a value to search for"<< endl;
+    cin >> skey;
+
+    while(skey != 'N') {
+	    result = linear(Grades,skey);
+	    
+	    if(result == -1) 
+		    cout "Your value was not found"<<endl;
+	    else 
+		    cout<<"Your value was found at index"<<result<<endl;
+
+
+	    cout<<"Please enter a value to search for( or 'N' to exit)" << endl;
+	    cin >> skey;
+   }
 
 return 0;
 }
