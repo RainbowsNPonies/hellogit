@@ -15,7 +15,8 @@ int linearSearch(auto data, auto key) {
 
 int main() {
 	
-    int i. result;
+    int i;
+	char skey, result;
 	
     Student grade1;
     Student grade2;
@@ -46,10 +47,10 @@ int main() {
     cin >> skey;
 
     while(skey != 'N') {
-	    result = linear(Grades,skey);
+	    result = linearSearch(Grades,skey);
 	    
 	    if(result == -1) 
-		    cout "Your value was not found"<<endl;
+		    cout<<"Your value was not found"<<endl;
 	    else 
 		    cout<<"Your value was found at index"<<result<<endl;
 
